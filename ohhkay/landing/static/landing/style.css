@@ -66,8 +66,8 @@ header a:hover {
     border-color: var(--hover);
     border-radius: 1rem;
     backdrop-filter: blur(5px);
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
     margin-left: 1.4rem;
 }
 
@@ -77,8 +77,8 @@ header a:hover {
     border-color: var(--hover);
     border-radius: 1rem;
     backdrop-filter: blur(5px);
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
     font-weight: bold;
     margin-right: 1.5rem;
 }
