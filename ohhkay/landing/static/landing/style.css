@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'paint';
+    font-style: normal;
+    font-weight: 400;
+    src: url('ttf/TMT_paint/static/TMT-Paint-Regular.otf');
+}
+
+@font-face {
+    font-family: 'dse';
+    font-style: normal;
+    font-weight: 400;
+    src: url('ttf/dse_typewriter/ttf/dse-typewriter-font.ttf');
+}
+
+
+:root {
+    --hover: #b7410e;
+    --link_default: seagreen;
+    --background: #022D36;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'dse';
+    min-height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--background);
+}
+
+
+/* navbar */
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 0.25rem;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    padding: 1rem;
+}
+
+header a:hover {
+    color: var(--hover);
+}
+
+.logo-container {
+    font-family: 'paint';
+    font-size: 2.5rem;
+    border: solid;
+    border-color: var(--hover);
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-left: 1.4rem;
+}
+
+.navbar {
+    font-size: 1.75rem;
+    border: solid;
+    border-color: var(--hover);
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+
+/* Content */
+
+.content {
+    padding: 0 1em;
+    margin: 0 auto;
+    margin-top: 3em;;
+    margin-bottom: 2em;;
+    max-width: 70rem;
+    font-size: 1.4rem;
+}
+
+
+/* Footer */
+
+footer {
+    padding-bottom: 3rem;
+    border-top: double;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-family: 'paint';
+    display: inline;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--hover);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}

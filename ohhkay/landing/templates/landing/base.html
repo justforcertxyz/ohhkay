@@ -5,24 +5,26 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'landing/style.css' %}">
     {% block css %}{% endblock %}
-    <title>{% block title %}{% endblock %} - GuideHub</title> 
+    <title>{% block title %}{% endblock %} - ohhkay</title> 
 </head>
 
 <body>
     
     <header class="header">
         <div class="logo-container">
-            <a href="{% url 'landing:index' %}" class="logo">MeinMemoir</a>
+            <a href="{% url 'landing:index' %}" class="logo">ohhkay</a>
         </div>
 
         <nav class="navbar">
             <a href="#">Blog</a>
-            <a href="#">Bücher</a>
+            <a href="#">Links</a>
+            <a href="#">Empfehlungen</a>
         </nav>
     </header>    
 
     <div class="content">
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock content %}
     </div>
 </body>
 <footer>
@@ -31,6 +33,12 @@
             <h2>Informationen</h2>
             <a href="#">Impressum</a>
             <a href="#">Datenschutzerklärung</a>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer-logo">ohhkay</h2>
+            <a href="{% url 'landing:index' %}">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Empfehlungen</a>
         </div>
         <div class="footer-item">
             <h2>Links</h2>
