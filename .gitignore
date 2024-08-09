@@ -4,6 +4,7 @@
 # Python Cache etc.
 *.pyc
 *.pyo
+__pycache__/
 
 # Environments
 .env
