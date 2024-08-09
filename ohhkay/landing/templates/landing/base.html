@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'landing/style.css' %}">
+    {% block css %}{% endblock %}
+    <title>{% block title %}{% endblock %} - GuideHub</title> 
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="logo-container">
+            <a href="{% url 'landing:index' %}" class="logo">MeinMemoir</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Blog</a>
+            <a href="#">Bücher</a>
+        </nav>
+    </header>    
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-item">
+            <h2>Informationen</h2>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutzerklärung</a>
+        </div>
+        <div class="footer-item">
+            <h2>Links</h2>
+            <a href="#">Links</a>
+            <a href="#">GuideHub</a>
+            <a href="https://github.com/justforcertxyz/ohhkay">GitHub</a>
+        </div>
+    </div>
+</footer>
+</html>
