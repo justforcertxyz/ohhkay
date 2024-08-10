@@ -15,7 +15,7 @@
 
 :root {
     --hover: #b7410e;
-    --link_default: seagreen;
+    --link_default: #E39FF6;
     --background: #022D36;
 }
 
@@ -98,8 +98,20 @@ header a:hover {
 .content-item {
     border-top: dotted;
     font-size: 1.4rem;
+    margin-top: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+.content-item a {
+    text-decoration: none;
+    color: var(--link_default);
+    transition: .3s;
+}
+
+.content-item a:hover {
+    text-decoration: none;
+    color: var(--hover);
 }
 
 
