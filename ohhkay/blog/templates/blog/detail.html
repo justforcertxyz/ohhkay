@@ -1,0 +1,13 @@
+
+{% extends "landing/base.html" %}
+
+{% block title %}{{ object }}{% endblock %}
+
+{% block content %}
+    {% for tag in object.list_tags %}
+        <p>{{ tag }}</p>
+    {% endfor %}
+    {% if object.text %}
+        {{ object.text|safe }}
+    {% endif %}
+{% endblock content %}
