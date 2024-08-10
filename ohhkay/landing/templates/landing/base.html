@@ -22,6 +22,15 @@
             <a href="{% url 'blog:index' %}">Blog</a>
             <a href="#">Links</a>
             <a href="#">{% trans "Recommendations" %}</a>
+            {% get_available_languages as AVAILABLE_LANGUAGES %}
+            {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+            {% for language in languages %}
+                {% if language.code != CURRENT_LANGUAGE %}
+                    <a href="/{{ language.code }}/">
+                        {{ language.code|capfirst }}
+                    </a>
+                {% endif %}
+            {% endfor %}
         </nav>
     </header>    
 
