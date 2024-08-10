@@ -3,13 +3,13 @@
 {% block title %}Blog{% endblock %}
 
 {% block content %}
-<h1>Alle Blog-Einträge</h1>
+<h1>All Entries</h1>
 
 <ul>
     {% for entry in object_list %}
         <li><a href="{% url 'blog:detail' entry.slug %}">{{ entry.pub_date|date }} - {{ entry }}</a></li>
     {% empty %}
-        <li>Noch keine Einträge.</li>
+        <li>No entries yet.</li>
     {% endfor %}
 </ul>
 {% endblock content %}
