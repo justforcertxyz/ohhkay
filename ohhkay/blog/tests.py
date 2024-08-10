@@ -29,7 +29,7 @@ class BlogModelTest(TestCase):
 
         self.assertEqual(str(blog), blog.title)
     
-    def test_template_path(self):
+    def test_template_path_en(self):
         file_name = "test.html"
         html_file = SimpleUploadedFile(name=file_name, 
             content=b"<h1>This is some HTML</h1><p>Here is some pragraph</p>",
@@ -38,12 +38,25 @@ class BlogModelTest(TestCase):
 
         blog = Blog.objects.create(title="Some Title",
             slug="some_slug",
-            html_file=html_file,
+            html_file_en=html_file,
         )
 
-        self.assertEqual(blog.template_path(), "blog/entries/test.html")
-    
+        self.assertEqual(blog.template_path_en(), "blog/entries/test.html")
 
+    def test_template_path_en(self):
+        file_name = "test.html"
+        html_file = SimpleUploadedFile(name=file_name, 
+            content=b"<h1>This is some HTML</h1><p>Here is some pragraph</p>",
+            content_type="text/html"
+        )
+
+        blog = Blog.objects.create(title="Some Title",
+            slug="some_slug",
+            html_file_de=html_file,
+        )
+
+        self.assertEqual(blog.template_path_de(), "blog/entries/test.html")
+    
 class IndexPageTest(TestCase):
     def setUp(self):
         self.client = Client()
@@ -75,7 +88,7 @@ class DetailPageTest(TestCase):
 
         self.blog = Blog.objects.create(title="Some Title",
             slug="some_slug",
-            html_file=self.html_file,
+            html_file_en=self.html_file,
         )
 
         self.detail_url = reverse('blog:detail', kwargs={'slug': self.blog.slug})
