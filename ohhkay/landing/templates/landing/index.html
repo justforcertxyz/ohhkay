@@ -1,30 +1,39 @@
 {% extends "landing/base.html" %}
+{% load i18n %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
 <div class="content-item">
-    <h1>About Me</h1>
+    <h1>{% trans "About Me" %}</h1>
     <p>
+        {% blocktrans %}
         Hello and welcome to my personal website.
         My name is Oliver and I am a German electrical engineering student in my mid 20s,
         currently doing my Masters degree.
         To be more specific, the degree is focusing on electrical power engineering
         and I am personally specialized in electrical drives.
+        {% endblocktrans %}
     </p>
     <p>
+        {% blocktrans %}
         Apart from that I am interested in (geo-)politics, programming,
-        open-source-software, music, sports and books.<br>
-        My <a href="{% url 'blog:index' %}">blog</a> will touch on some of those topics,
-        furthermore there are some <a href="#">recommendations</a> on books and software to
-        be found.
+        open-source-software, sports and books.<br>
+        My{% endblocktrans %} <a href="{% url 'blog:index' %}">{% trans "blog" %}</a> 
+        {% blocktrans %} will touch on some of those topics,
+        furthermore there are some {% endblocktrans %}<a href="#">{% trans "recommendations" %}</a>
+        {% blocktrans %}on books and software to be found.
+        {% endblocktrans %}
     </p>    
     <p>
+        {% blocktrans %}
         This is not the only website I own,
-        there are some more <a href="#">projects</a> with some of which I try to earn some coin.<br>
-        All of my projects are self-build and open-source an their source code can be found on <a href="https://github.com/justforcertxyz">GitHub</a>.
+        there are some more {% endblocktrans %}<a href="#">{% trans "projects" %}</a>
+        {% blocktrans %}with some of which I try to earn some coin.<br>
+        All of my projects are self-build and open-source and their source code can be found on <a href="https://github.com/justforcertxyz">GitHub</a>.
+        {% endblocktrans %}
     </p>
 
-    <h3>Kind Regards, Oliver!</h3>
+    <h3>{% trans "Kind Regards, Oliver!" %}</h3>
 </div>
 {% endblock content %}

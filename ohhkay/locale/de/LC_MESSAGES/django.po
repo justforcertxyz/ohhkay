@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-10 20:27+0200\n"
+"PO-Revision-Date: 2024-08-10 18:30+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: landing/templates/landing/base.html:24
+#: landing/templates/landing/base.html:44
+msgid "Recommendations"
+msgstr "Empfehlungen"
+
+#: landing/templates/landing/base.html:36
+msgid "Legals"
+msgstr "Rechtliches"
+
+#: landing/templates/landing/base.html:37
+msgid "Imprint"
+msgstr "Impressum"
+
+#: landing/templates/landing/base.html:38
+msgid "Privacy Policy (german)"
+msgstr "Datenschutzerklärung"
+
+#: landing/templates/landing/base.html:50
+msgid "Source"
+msgstr "Quellcode"
+
+#: landing/templates/landing/index.html:8
+msgid "About Me"
+msgstr "Über Mich"
+
+#: landing/templates/landing/index.html:10
+msgid ""
+"\n"
+"        Hello and welcome to my personal website.\n"
+"        My name is Oliver and I am a German electrical engineering student in my mid 20s,\n"
+"        currently doing my Masters degree.\n"
+"        To be more specific, the degree is focusing on electrical power engineering\n"
+"        and I am personally specialized in electrical drives.\n"
+"        "
+msgstr ""
+"\n"
+"Hallo und herzlich Wilkommen auf meiner persönlichen Website. Meine Name ist Oliver und ich bin ein Mitte zwanzig Jähriger Elektrotechnik-Student, zur Zeit im Master-Studium.\n"
+"Um noch etwas genauer zu sein, mein Studium hat den Fokus auf elektrischer Energietechnik und ich bin selbst auf elektrische Antriebe spezialisiert."
+
+#: landing/templates/landing/index.html:19
+msgid ""
+"\n"
+"        Apart from that I am interested in (geo-)politics, programming,\n"
+"        open-source-software, sports and books.<br>\n"
+"        My"
+msgstr ""
+"\n"
+"Abgesehen davon interessiere ich mich für (Geo-)Politik, Programmieren, Open-Source-Software, Sport und Bücher.<br>\n"
+"Mein"
+
+#: landing/templates/landing/index.html:22
+msgid "blog"
+msgstr "Blog"
+
+#: landing/templates/landing/index.html:23
+msgid ""
+" will touch on some of those topics,\n"
+"        furthermore there are some "
+msgstr ""
+"wird sich mit einigen dieser Themen beschäftigen.\n"
+"Außerdem gibt es einige Buch- und Software-"
+
+#: landing/templates/landing/index.html:24
+msgid "recommendations"
+msgstr "Empfehlungen"
+
+#: landing/templates/landing/index.html:25
+msgid ""
+"on books and software to be found.\n"
+"        "
+msgstr "zu finden."
+
+#: landing/templates/landing/index.html:29
+msgid ""
+"\n"
+"        This is not the only website I own,\n"
+"        there are some more "
+msgstr ""
+"\n"
+"Das hier ist nicht die einzige Website die ich besitze, es gibt noch mehr "
+
+#: landing/templates/landing/index.html:31
+msgid "projects"
+msgstr "Projekte"
+
+#: landing/templates/landing/index.html:32
+#| msgid ""
+#| "with some of which I try to earn some coin.<br>\n"
+#| "        All of my projects are self-build and open-source an their source code can be found on <a href=\"https://github.com/justforcertxyz\">GitHub</a>.\n"
+#| "        "
+msgid ""
+"with some of which I try to earn some coin.<br>\n"
+"        All of my projects are self-build and open-source and their source code can be found on <a href=\"https://github.com/justforcertxyz\">GitHub</a>.\n"
+"        "
+msgstr ""
+"unter Anderem auch welche, mit denen ich etwas Geld verdienen will.<br>\n"
+"Alle meiner Projekte sind selbst programmiert und open-source, die Quellcodes gibt es auf <a href=\"https://github.com/justforcertxyz\">GitHub</a>."
+
+#: landing/templates/landing/index.html:37
+msgid "Kind Regards, Oliver!"
+msgstr "Beste Grüße, Oliver!"
+
+#: ohhkay/settings.py:126
+msgid "English"
+msgstr "Englisch"
+
+#: ohhkay/settings.py:127
+msgid "German"
+msgstr "Deutsch"

@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-10 20:27+0200\n"
+"PO-Revision-Date: 2024-08-10 18:10+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: landing/templates/landing/base.html:24
+#: landing/templates/landing/base.html:44
+msgid "Recommendations"
+msgstr ""
+
+#: landing/templates/landing/base.html:36
+msgid "Legals"
+msgstr ""
+
+#: landing/templates/landing/base.html:37
+msgid "Imprint"
+msgstr ""
+
+#: landing/templates/landing/base.html:38
+msgid "Privacy Policy (german)"
+msgstr ""
+
+#: landing/templates/landing/base.html:50
+msgid "Source"
+msgstr ""
+
+#: landing/templates/landing/index.html:8
+msgid "About Me"
+msgstr ""
+
+#: landing/templates/landing/index.html:10
+msgid ""
+"\n"
+"        Hello and welcome to my personal website.\n"
+"        My name is Oliver and I am a German electrical engineering student "
+"in my mid 20s,\n"
+"        currently doing my Masters degree.\n"
+"        To be more specific, the degree is focusing on electrical power "
+"engineering\n"
+"        and I am personally specialized in electrical drives.\n"
+"        "
+msgstr ""
+
+#: landing/templates/landing/index.html:19
+msgid ""
+"\n"
+"        Apart from that I am interested in (geo-)politics, programming,\n"
+"        open-source-software, sports and books.<br>\n"
+"        My"
+msgstr ""
+
+#: landing/templates/landing/index.html:22
+msgid "blog"
+msgstr ""
+
+#: landing/templates/landing/index.html:23
+msgid ""
+" will touch on some of those topics,\n"
+"        furthermore there are some "
+msgstr ""
+
+#: landing/templates/landing/index.html:24
+msgid "recommendations"
+msgstr ""
+
+#: landing/templates/landing/index.html:25
+msgid ""
+"on books and software to be found.\n"
+"        "
+msgstr ""
+
+#: landing/templates/landing/index.html:29
+msgid ""
+"\n"
+"        This is not the only website I own,\n"
+"        there are some more "
+msgstr ""
+
+#: landing/templates/landing/index.html:31
+msgid "projects"
+msgstr ""
+
+#: landing/templates/landing/index.html:32
+msgid ""
+"with some of which I try to earn some coin.<br>\n"
+"        All of my projects are self-build and open-source and their source "
+"code can be found on <a href=\"https://github.com/justforcertxyz\">GitHub</"
+"a>.\n"
+"        "
+msgstr ""
+
+#: landing/templates/landing/index.html:37
+msgid "Kind Regards, Oliver!"
+msgstr ""
+
+#: ohhkay/settings.py:126
+msgid "English"
+msgstr ""
+
+#: ohhkay/settings.py:127
+msgid "German"
+msgstr ""
