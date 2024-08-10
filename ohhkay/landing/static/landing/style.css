@@ -95,6 +95,13 @@ header a:hover {
     font-size: 1.4rem;
 }
 
+.content-item {
+    border-top: dotted;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 
 /* Footer */
 
