@@ -91,6 +91,7 @@ class DetailPageTest(TestCase):
         response = self.client.get(self.detail_url)
         self.assertTemplateUsed(response, 'blog/detail.html')
         self.assertTemplateUsed(response, 'landing/base.html')
+        self.assertTemplateUsed(response, f'blog/entries/{self.file_name}')
         self.assertEqual(response.status_code, 200)
 
     def test_index_page_returns_corrent_content(self):
