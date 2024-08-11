@@ -33,12 +33,15 @@ ALLOWED_HOSTS = []
 
 SESSION_COOKIE_SECURE = bool(os.getenv('SESSION_COOKIE_SECURE', 'False'))
 CSRF_COOKIE_SECURE = bool(os.getenv('CSRF_COOKIE_SECURE', 'False'))
-SECURE_CONTENT_TYPE_NOSNIFF = bool(os.getenv('SECURE_CONTENT_TYPE_NOSNIFF', 'False'))
-SECURE_BROWSER_XSS_FILTER = bool(os.getenv('SECURE_BROWSER_XSS_FILTER', 'False'))
+SECURE_CONTENT_TYPE_NOSNIFF = bool(
+    os.getenv('SECURE_CONTENT_TYPE_NOSNIFF', 'False'))
+SECURE_BROWSER_XSS_FILTER = bool(
+    os.getenv('SECURE_BROWSER_XSS_FILTER', 'False'))
 SECURE_SSL_REDIRECT = bool(os.getenv('SECURE_SSL_REDIRECT', 'False'))
 SECURE_HSTS_SECONDS = int(os.getenv('SECURE_HSTS_SECONDS', 3600))
 SECURE_HSTS_PRELOAD = bool(os.getenv('SECURE_HSTS_PRELOAD', 'False'))
-SECURE_HSTS_INCLUDE_SUBDOMAINS = bool(os.getenv('SECURE_HSTS_INCLUDE_SUBDOMAINS', 'False'))
+SECURE_HSTS_INCLUDE_SUBDOMAINS = bool(
+    os.getenv('SECURE_HSTS_INCLUDE_SUBDOMAINS', 'False'))
 
 
 # Application definition
@@ -162,4 +165,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
