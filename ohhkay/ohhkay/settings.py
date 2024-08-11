@@ -134,8 +134,8 @@ LOCALE_PATHS = [
 
 PARLER_LANGUAGES = {
     None: (
-        {'code': 'en',}, # English
-        {'code': 'de',}, # German
+        {'code': 'en', },  # English
+        {'code': 'de', },  # German
     ),
     'default': {
         'fallbacks': ['en'],
