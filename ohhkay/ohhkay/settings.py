@@ -31,17 +31,17 @@ DEBUG = (os.getenv('DEBUG', 'False') == 'True')
 
 ALLOWED_HOSTS = []
 
-# SESSION_COOKIE_SECURE = bool(os.getenv('SESSION_COOKIE_SECURE', 'False'))
-# CSRF_COOKIE_SECURE = bool(os.getenv('CSRF_COOKIE_SECURE', 'False'))
-# SECURE_CONTENT_TYPE_NOSNIFF = bool(
-#     os.getenv('SECURE_CONTENT_TYPE_NOSNIFF', 'False'))
-# SECURE_BROWSER_XSS_FILTER = bool(
-#     os.getenv('SECURE_BROWSER_XSS_FILTER', 'False'))
-# SECURE_SSL_REDIRECT = bool(os.getenv('SECURE_SSL_REDIRECT', 'False'))
-# SECURE_HSTS_SECONDS = int(os.getenv('SECURE_HSTS_SECONDS', 3600))
-# SECURE_HSTS_PRELOAD = bool(os.getenv('SECURE_HSTS_PRELOAD', 'False'))
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = bool(
-#     os.getenv('SECURE_HSTS_INCLUDE_SUBDOMAINS', 'False'))
+SESSION_COOKIE_SECURE = (os.getenv('SESSION_COOKIE_SECURE', 'False') == 'True')
+CSRF_COOKIE_SECURE = (os.getenv('CSRF_COOKIE_SECURE', 'False') == 'True')
+SECURE_CONTENT_TYPE_NOSNIFF = (
+    os.getenv('SECURE_CONTENT_TYPE_NOSNIFF', 'False') == 'True')
+SECURE_BROWSER_XSS_FILTER = (
+    os.getenv('SECURE_BROWSER_XSS_FILTER', 'False') == 'True')
+SECURE_SSL_REDIRECT = (os.getenv('SECURE_SSL_REDIRECT') == 'True')
+SECURE_HSTS_SECONDS = int(os.getenv('SECURE_HSTS_SECONDS', 3600))
+SECURE_HSTS_PRELOAD = (os.getenv('SECURE_HSTS_PRELOAD', 'False') == 'True')
+SECURE_HSTS_INCLUDE_SUBDOMAINS = (
+    os.getenv('SECURE_HSTS_INCLUDE_SUBDOMAINS', 'False') == 'True')
 
 
 # Application definition
