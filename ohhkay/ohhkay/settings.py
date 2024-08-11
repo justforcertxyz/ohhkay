@@ -39,7 +39,6 @@ SECURE_SSL_REDIRECT = bool(os.getenv('SECURE_SSL_REDIRECT', 'False'))
 SECURE_HSTS_SECONDS = int(os.getenv('SECURE_HSTS_SECONDS', 3600))
 SECURE_HSTS_PRELOAD = bool(os.getenv('SECURE_HSTS_PRELOAD', 'False'))
 SECURE_HSTS_INCLUDE_SUBDOMAINS = bool(os.getenv('SECURE_HSTS_INCLUDE_SUBDOMAINS', 'False'))
-print(f'{SECURE_HSTS_PRELOAD=}')
 
 
 # Application definition
