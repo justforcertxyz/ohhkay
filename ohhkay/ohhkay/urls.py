@@ -19,7 +19,7 @@ from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = i18n_patterns(
-    path('admin/', admin.site.urls),
+    path('config/', admin.site.urls),
     path('', include("landing.urls")),
     path('blog/', include("blog.urls")),
     path('rosetta/', include('rosetta.urls')),
