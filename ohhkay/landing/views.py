@@ -16,3 +16,7 @@ class RecommendationsView(TemplateView):
 
 class PrivacyPolicyView(TemplateView):
     template_name = "landing/privacy_policy.html"
+
+
+class ImprintView(TemplateView):
+    template_name = "landing/imprint.html"
