@@ -18,6 +18,7 @@ class IndexPageTest(TestCase):
         response = self.client.get(self.index_url)
         self.assertContains(response, "<title>Home")
 
+
 class LinksPageTest(TestCase):
     def setUp(self):
         self.client = Client()
