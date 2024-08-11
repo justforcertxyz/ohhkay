@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-10 20:27+0200\n"
+"POT-Creation-Date: 2024-08-11 14:07+0200\n"
 "PO-Revision-Date: 2024-08-10 18:10+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,24 +19,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: landing/templates/landing/base.html:24
-#: landing/templates/landing/base.html:44
+#: landing/templates/landing/base.html:23
+#: landing/templates/landing/base.html:52
+#: landing/templates/landing/recommendations.html:5
 msgid "Recommendations"
 msgstr ""
 
-#: landing/templates/landing/base.html:36
+#: landing/templates/landing/base.html:44
 msgid "Legals"
 msgstr ""
 
-#: landing/templates/landing/base.html:37
+#: landing/templates/landing/base.html:45
+#: landing/templates/landing/imprint.html:5
 msgid "Imprint"
 msgstr ""
 
-#: landing/templates/landing/base.html:38
+#: landing/templates/landing/base.html:46
 msgid "Privacy Policy (german)"
 msgstr ""
 
-#: landing/templates/landing/base.html:50
+#: landing/templates/landing/base.html:57
 msgid "Source"
 msgstr ""
 
@@ -109,10 +111,14 @@ msgstr ""
 msgid "Kind Regards, Oliver!"
 msgstr ""
 
-#: ohhkay/settings.py:126
-msgid "English"
+#: landing/templates/landing/privacy_policy.html:5
+msgid "Privacy Policy"
 msgstr ""
 
 #: ohhkay/settings.py:127
+msgid "English"
+msgstr ""
+
+#: ohhkay/settings.py:128
 msgid "German"
 msgstr ""
