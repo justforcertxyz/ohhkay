@@ -1,11 +1,15 @@
 from django.db import models
 from django.utils import timezone
 from taggit.managers import TaggableManager
+from parler.models import TranslatableModel, TranslatedFields
 
-class Blog(models.Model):
-    title = models.CharField("Post Title", max_length=50, unique=True)
+class Blog(TranslatableModel):
+    translations = TranslatedFields(
+        title = models.CharField("Post Title", max_length=50, unique=True),
+        slug = models.SlugField("Slug", max_length=50, unique=True),
+    )
+
     pub_date = models.DateTimeField("Date Published", default=timezone.now)
-    slug = models.SlugField("Slug", max_length=50, unique=True)
     html_file_de = models.FileField("HTML File German",
         upload_to=f"blog/templates/blog/entries/",
         null=True, blank=True

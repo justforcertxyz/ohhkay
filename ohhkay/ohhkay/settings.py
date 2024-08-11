@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     'taggit',
     'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -130,6 +131,17 @@ LANGUAGES = (
 LOCALE_PATHS = [
     BASE_DIR / 'locale/',
 ]
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en',}, # English
+        {'code': 'de',}, # German
+    ),
+    'default': {
+        'fallbacks': ['en'],
+        'hide_untranslated': False,
+    }
+}
 
 
 # Static files (CSS, JavaScript, Images)
