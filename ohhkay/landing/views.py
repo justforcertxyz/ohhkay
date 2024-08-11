@@ -12,3 +12,7 @@ class LinksView(TemplateView):
 
 class RecommendationsView(TemplateView):
     template_name = "landing/recommendations.html"
+
+
+class PrivacyPolicyView(TemplateView):
+    template_name = "landing/privacy_policy.html"
