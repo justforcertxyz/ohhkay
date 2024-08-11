@@ -6,13 +6,7 @@
     {% for tag in object.list_tags %}
         <p>{{ tag }}</p>
     {% endfor %}
-    {% if CURRENT_LANGUAGE == 'en' %}
-        {% if object.html_file_en %}
-            {% include object.template_path_en %}
-        {% endif %}
-    {% else %}
-        {% if object.html_file_de %}
-            {% include object.template_path_de %}
-        {% endif %}
+    {% if object.html_file %}
+        {% include object.template_path %}
     {% endif %}
 {% endblock content %}

@@ -1,5 +1,6 @@
 # Database
 *.sqlite3
+fixtures/
 
 # Python Cache etc.
 *.pyc
