@@ -1,6 +1,7 @@
 # Database
 *.sqlite3
 fixtures/
+staticroot/
 
 # HTML Tests
 test*.html
