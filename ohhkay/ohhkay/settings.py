@@ -60,7 +60,6 @@ INSTALLED_APPS = [
     'taggit',
     'rosetta',
     'parler',
-    'cookielaw'
 ]
 
 MIDDLEWARE = [
