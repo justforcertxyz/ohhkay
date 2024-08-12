@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 14:07+0200\n"
-"PO-Revision-Date: 2024-08-11 12:07+0000\n"
+"POT-Creation-Date: 2024-08-12 13:50+0200\n"
+"PO-Revision-Date: 2024-08-12 17:22+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,26 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: landing/templates/landing/base.html:23
-#: landing/templates/landing/base.html:52
-#: landing/templates/landing/recommendations.html:5
-msgid "Recommendations"
-msgstr "Empfehlungen"
-
-#: landing/templates/landing/base.html:44
-msgid "Legals"
-msgstr "Rechtliches"
-
-#: landing/templates/landing/base.html:45
+#: landing/templates/404.html:4 landing/templates/landing/base.html:46
 #: landing/templates/landing/imprint.html:5
 msgid "Imprint"
 msgstr "Impressum"
 
-#: landing/templates/landing/base.html:46
+#: landing/templates/404.html:8
+msgid "Sorry, this page has not been found!"
+msgstr "Sorry, diese Seite wurde nicht gefunden!"
+
+#: landing/templates/landing/base.html:24
+#: landing/templates/landing/base.html:53
+#: landing/templates/landing/recommendations.html:5
+msgid "Recommendations"
+msgstr "Empfehlungen"
+
+#: landing/templates/landing/base.html:45
+msgid "Legals"
+msgstr "Rechtliches"
+
+#: landing/templates/landing/base.html:47
 msgid "Privacy Policy (german)"
 msgstr "Datenschutzerklärung"
 
-#: landing/templates/landing/base.html:57
+#: landing/templates/landing/base.html:58
 msgid "Source"
 msgstr "Quellcode"
 
@@ -57,7 +61,7 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Hallo und herzlich Wilkommen auf meiner persönlichen Website. Meine Name ist Oliver und ich bin ein Mitte zwanzig Jähriger Elektrotechnik-Student, zur Zeit im Master-Studium.\n"
+"Hallo und herzlich Willkommen auf meiner persönlichen Website. Meine Name ist Oliver und ich bin ein Mitte zwanzig Jähriger Elektrotechnik-Student, zur Zeit im Master-Studium.\n"
 "Um noch etwas genauer zu sein, mein Studium hat den Fokus auf elektrischer Energietechnik und ich bin selbst auf elektrische Antriebe spezialisiert."
 
 #: landing/templates/landing/index.html:19
@@ -120,14 +124,13 @@ msgid "Kind Regards, Oliver!"
 msgstr "Beste Grüße, Oliver!"
 
 #: landing/templates/landing/privacy_policy.html:5
-#| msgid "Privacy Policy (german)"
 msgid "Privacy Policy"
 msgstr "Datenschutzerklärung"
 
-#: ohhkay/settings.py:127
+#: ohhkay/settings.py:139
 msgid "English"
 msgstr "Englisch"
 
-#: ohhkay/settings.py:128
+#: ohhkay/settings.py:140
 msgid "German"
 msgstr "Deutsch"

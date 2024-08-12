@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 14:07+0200\n"
+"POT-Creation-Date: 2024-08-12 13:50+0200\n"
 "PO-Revision-Date: 2024-08-10 18:10+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,26 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: landing/templates/landing/base.html:23
-#: landing/templates/landing/base.html:52
-#: landing/templates/landing/recommendations.html:5
-msgid "Recommendations"
-msgstr ""
-
-#: landing/templates/landing/base.html:44
-msgid "Legals"
-msgstr ""
-
-#: landing/templates/landing/base.html:45
+#: landing/templates/404.html:4 landing/templates/landing/base.html:46
 #: landing/templates/landing/imprint.html:5
 msgid "Imprint"
 msgstr ""
 
-#: landing/templates/landing/base.html:46
+#: landing/templates/404.html:8
+msgid "Sorry, this page has not been found!"
+msgstr ""
+
+#: landing/templates/landing/base.html:24
+#: landing/templates/landing/base.html:53
+#: landing/templates/landing/recommendations.html:5
+msgid "Recommendations"
+msgstr ""
+
+#: landing/templates/landing/base.html:45
+msgid "Legals"
+msgstr ""
+
+#: landing/templates/landing/base.html:47
 msgid "Privacy Policy (german)"
 msgstr ""
 
-#: landing/templates/landing/base.html:57
+#: landing/templates/landing/base.html:58
 msgid "Source"
 msgstr ""
 
@@ -115,10 +119,10 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: ohhkay/settings.py:127
+#: ohhkay/settings.py:139
 msgid "English"
 msgstr ""
 
-#: ohhkay/settings.py:128
+#: ohhkay/settings.py:140
 msgid "German"
 msgstr ""
