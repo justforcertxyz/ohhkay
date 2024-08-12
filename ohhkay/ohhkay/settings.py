@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.getenv('DEBUG', 'False') == 'True')
 
-ALLOWED_HOSTS = [".ohhkay.me"]
+ALLOWED_HOSTS = ["*"]
 
 SESSION_COOKIE_SECURE = (os.getenv('SESSION_COOKIE_SECURE', 'False') == 'True')
 CSRF_COOKIE_SECURE = (os.getenv('CSRF_COOKIE_SECURE', 'False') == 'True')
