@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
+from debug_toolbar.toolbar import debug_toolbar_urls
 
 urlpatterns = i18n_patterns(
     path('config/', admin.site.urls),
     path('', include("landing.urls")),
     path('blog/', include("blog.urls")),
     path('rosetta/', include('rosetta.urls')),
-)
+) + debug_toolbar_urls()
