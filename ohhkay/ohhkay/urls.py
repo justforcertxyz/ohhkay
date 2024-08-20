@@ -23,4 +23,5 @@ urlpatterns = i18n_patterns(
     path('', include("landing.urls")),
     path('blog/', include("blog.urls")),
     path('rosetta/', include('rosetta.urls')),
+    path('silk/', include('silk.urls', namespace='silk')),
 )
