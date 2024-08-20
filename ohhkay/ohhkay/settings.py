@@ -65,6 +65,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'csp.middleware.CSPMiddleware',
     'silk.middleware.SilkyMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -174,3 +175,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Silk
 SILKY_AUTHENTICATION = True  # User must login
 SILKY_AUTHORISATION = True  # User must have permissions
+
+
+# Content Security Policy
+
+CSP_DEFAULT_SRC = ("'none'")
+CSP_CONNECT_SRC = ("'self'")
+CSP_IMG_SRC = ("'self'")
+CSP_FORM_ACTION = ("'self'")
+CSP_FRAME_ANCESTORS = ("'self'")
+CSP_SCRIPT_SRC = ("'self'")
+CSP_STYLE_SRC = ("'self'")
+CSP_UPGRADE_INSECURE_REQUESTS = True
+CSP_BASE_URI = ("'none'")
+CSP_FONT_SRC = ("'self'")
