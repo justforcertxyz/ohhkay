@@ -14,7 +14,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 from django.utils.translation import gettext_lazy as _
-import sys
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -62,9 +61,11 @@ INSTALLED_APPS = [
     'taggit',
     'rosetta',
     'parler',
+    'silk',
 ]
 
 MIDDLEWARE = [
+    'silk.middleware.SilkyMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
@@ -170,3 +171,6 @@ STATIC_ROOT = f'{BASE_DIR}/staticroot'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Silk
+SILKY_AUTHENTICATION = True  # User must login
+SILKY_AUTHORISATION = True  # User must have permissions
